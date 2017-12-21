@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9031152-ea0d-4119-91e6-6245f777ca16" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinuxFS/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinuxFS/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../LinuxFS/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/../LinuxFS/out/" />
@@ -29,6 +28,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../LinuxFS" />
   </component>
   <component name="GradleLocalSettings">
@@ -134,10 +134,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.splitter.proportion" value="0.17307693" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -263,14 +264,22 @@
       <option name="presentableId" value="Default" />
       <updated>1513776552662</updated>
       <workItem from="1513776555857" duration="3640000" />
-      <workItem from="1513836159453" duration="847000" />
+      <workItem from="1513836159453" duration="1161000" />
     </task>
+    <task id="LOCAL-00001" summary="第一次提交。">
+      <created>1513837510953</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1513837510954</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4487000" />
+    <option name="totallyTimeSpent" value="4801000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -320,6 +329,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一次提交。" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一次提交。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -382,16 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../LinuxFS/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../LinuxFS/src/Utlis/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -429,6 +432,16 @@
         <state relative-caret-position="315">
           <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../LinuxFS/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
