@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9031152-ea0d-4119-91e6-6245f777ca16" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinuxFS/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../LinuxFS/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="e9031152-ea0d-4119-91e6-6245f777ca16" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/../LinuxFS/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -264,7 +262,7 @@
       <option name="presentableId" value="Default" />
       <updated>1513776552662</updated>
       <workItem from="1513776555857" duration="3640000" />
-      <workItem from="1513836159453" duration="1252000" />
+      <workItem from="1513836159453" duration="1263000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交。">
       <created>1513837510953</created>
@@ -280,11 +278,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513837811090</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="第一次提交。">
+      <created>1513837906253</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513837906253</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4892000" />
+    <option name="totallyTimeSpent" value="4903000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
