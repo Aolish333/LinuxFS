@@ -143,9 +143,21 @@ public class FSystem {
                 case "mkdir" :
                     CreateDir.mkdir(cmd);
                     break;
+                case "delete":
+                    FileInfo.delete(cmd);
+                    break;
                 case "cd" :
                     EnterDir.cd(cmd);
                     break;
+                case "read":
+                    FileInfo.readFile(cmd);
+                    break;
+                case "write":
+                    FileInfo.writeFile(cmd);
+                    break;
+//                case "rename":
+//                    FileInfo.renameFile(path,);
+//                    break;
                 case "exit" :
                     System.exit(0);
                     break;
@@ -540,7 +552,7 @@ public class FSystem {
     /**
      * getInode(String path) 由path得到Inode
      *
-     * @param name
+
      * @return
      */
     private Inode getInode(String path) {
@@ -555,7 +567,6 @@ public class FSystem {
     /**
      * getBlock() 得到空闲的block的序号
      *
-     * @param name
      * @return
      */
     private int getBlock() {
