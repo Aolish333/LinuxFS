@@ -1,5 +1,7 @@
 package OS;
 
+import DS.CreateDir;
+import DS.EnterDir;
 import Ext2.Inode;
 import Ext2.MyDirectory;
 import Ext2.MyFile;
@@ -13,6 +15,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static Utlis.CommonWay.getFileByName;
 import static Utlis.CommonWay.getFreeInode;
 
 /**
@@ -38,7 +41,7 @@ public class FSystem {
     public static Inode now_inode = null;
     public static Object now_file = null;
 
-    Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 
 
     /**
@@ -46,8 +49,6 @@ public class FSystem {
      */
     public void init() {
         users = (ArrayList <String>) FileTools.read("users.txt");
-
-
 
 
         sb = (SuperBlock) FileTools.read("super.txt");
@@ -108,9 +109,8 @@ public class FSystem {
     public static void meun() {
 
 
-
-        Scanner s = new Scanner(System.in);
-        String str = null;
+        String commond = null;
+        String cmd[] = null;
         System.out.println("欢迎进入Linux文件系统！");
         System.out.println("系统正在初始化.....");
         System.out.println("系统初始化成功。");
@@ -118,15 +118,17 @@ public class FSystem {
         System.out.print(now_inode.getPath());
 
         CurrentStates.show();
-        while ((str = s.next()) != null) {
+        while (true) {
+            System.out.print(now_inode.getPath());
 
-
-            if (str.equals("exit")) {
-                System.out.println("感谢您的使用！");
-                break;
+            commond = sc.nextLine();
+            if (commond.equals("")) {
+                commond = sc.nextLine();
             }
-            String[] strs = editStr(str);
-            switch (strs[0]) {
+            cmd = commond.trim().split(" ");
+
+//            String[] strs = editStr(cmd);
+            switch (cmd[0]) {
                 case "help":
                     //输出 help 命令
                     Command command = new Command();
@@ -135,12 +137,20 @@ public class FSystem {
                 case "dir" :
                     FileInfo.FilesUerInfo();
                     break;
-
                 case "create" :
-                    FileInfo.create(strs);
+                    FileInfo.create(cmd);
+                    break;
+                case "mkdir" :
+                    CreateDir.mkdir(cmd);
+                    break;
+                case "cd" :
+                    EnterDir.cd(cmd);
+                    break;
+                case "exit" :
+                    System.exit(0);
                     break;
                 default:
-                    for (String st : strs) {
+                    for (String st : cmd) {
                         System.out.println(st);
                     }
                     System.out.println("您所输入的命令有误，请检查！");
@@ -149,35 +159,6 @@ public class FSystem {
         }//while
     }
 
-
-    /**
-     * 对输入的字符串进行过滤。
-     *
-     * @param str
-     * @return
-     */
-    public static String[] editStr(String str) {
-        // 根据空格分割输入命令
-        Pattern pattern = Pattern.compile("([a-zA-Z0-9.\\\\/]*) *");
-        Matcher m = pattern.matcher(str);
-        ArrayList <String> list = new ArrayList <String>();
-        while (m.find()) {
-            list.add(m.group(1));
-        }
-        String[] strs = list.toArray(new String[list.size()]);
-
-        // 判断除命令以外每一个参数中是否含有 "."
-        for (int i = 1; i < strs.length; i++) {
-            int j = strs[i].indexOf(".");
-            // 若含有"." 将其切割 取前部分作为文件名
-            if (j != -1) {
-                // 使用转义字符"\\."
-                String[] index = strs[i].split("\\.");
-                strs[i] = index[0];
-            }
-        }
-        return strs;
-    }
 
 
     /**
@@ -299,37 +280,37 @@ public class FSystem {
             }
             // 创建文件目录
             else if (cmd[0].trim().equals("mkdir")) {
-                int index = getFreeInode();
-                if (index != -1) {
-                    MyDirectory my_file = new MyDirectory();
-                    my_file.setName(cmd[1]);
-                    Inode inode = new Inode();
-                    inode.setFather(now_inode.getMe());
-                    inode.setUsers(name);
-                    inode.setMe(index);
-                    inode.setModifytime();
-                    inode.setPath(now_inode.getPath() + cmd[1] + "->");
-                    inode.setRight(1);// 可写
-                    inode.setType(0);// 文件
-                    inode.setAddress(index);
-                    inodes[index] = inode;
-                    my_file.setInode_address(index);
-
-                    MyDirectory real_file = (MyDirectory) now_file;
-                    blocks[index] = my_file;
-                    real_file.getTree().put(index, index);
-                    inodes[index].setLength(0);
-                    sb.setInode_busy(index);
-
-                } else {
-                    System.out.println("inode申请失败！");
-                }
+//                int index = getFreeInode();
+//                if (index != -1) {
+//                    MyDirectory my_file = new MyDirectory();
+//                    my_file.setName(cmd[1]);
+//                    Inode inode = new Inode();
+//                    inode.setFather(now_inode.getMe());
+//                    inode.setUsers(name);
+//                    inode.setMe(index);
+//                    inode.setModifytime();
+//                    inode.setPath(now_inode.getPath() + cmd[1] + "->");
+//                    inode.setRight(1);// 可写
+//                    inode.setType(0);// 文件
+//                    inode.setAddress(index);
+//                    inodes[index] = inode;
+//                    my_file.setInode_address(index);
+//
+//                    MyDirectory real_file = (MyDirectory) now_file;
+//                    blocks[index] = my_file;
+//                    real_file.getTree().put(index, index);
+//                    inodes[index].setLength(0);
+//                    sb.setInode_busy(index);
+//
+//                } else {
+//                    System.out.println("inode申请失败！");
+//                }
 
             }
             // 删除文件的操作
             else if (cmd[0].trim().equals("delete")) {
 
-                Object o = this.getFileByName(cmd[1]);
+                Object o = getFileByName(cmd[1]);
                 if (null != o) {
                     if (o instanceof MyDirectory) {
                         MyDirectory o1 = (MyDirectory) o;
@@ -372,29 +353,29 @@ public class FSystem {
                 }
 
             } else if (cmd[0].trim().equals("cd")) {
-                if (".".equals(cmd[1])) {
-
-                } else if ("..".equals(cmd[1])) {
-                    if (now_inode.getFather() == -1) {
-                        System.out.println("当前目录为根目录！");
-                    } else {
-                        MyDirectory now_directory = (MyDirectory) now_file;
-                        now_inode = inodes[now_inode.getFather()];
-                        now_file = blocks[now_inode.getAddress()];
-                    }
-                } else if (null != getFileByName(cmd[1])) {
-                    Object o1 = getFileByName(cmd[1]);
-                    if (o1 instanceof MyDirectory) {
-                        MyDirectory o = (MyDirectory) o1;
-                        now_file = o;
-                        now_inode = inodes[o.getInode_address()];
-                    } else {
-                        System.out.println("输入的目录不存在，请检查！");
-                    }
-
-                } else {
-                    System.out.println("输入的目录不存在，请检查！");
-                }
+//                if (".".equals(cmd[1])) {
+//
+//                } else if ("..".equals(cmd[1])) {
+//                    if (now_inode.getFather() == -1) {
+//                        System.out.println("当前目录为根目录！");
+//                    } else {
+//                        MyDirectory now_directory = (MyDirectory) now_file;
+//                        now_inode = inodes[now_inode.getFather()];
+//                        now_file = blocks[now_inode.getAddress()];
+//                    }
+//                } else if (null != getFileByName(cmd[1])) {
+//                    Object o1 = getFileByName(cmd[1]);
+//                    if (o1 instanceof MyDirectory) {
+//                        MyDirectory o = (MyDirectory) o1;
+//                        now_file = o;
+//                        now_inode = inodes[o.getInode_address()];
+//                    } else {
+//                        System.out.println("输入的目录不存在，请检查！");
+//                    }
+//
+//                } else {
+//                    System.out.println("输入的目录不存在，请检查！");
+//                }
 
             } else if (cmd[0].trim().equals("open")) {
                 // 没时间写了
@@ -413,7 +394,7 @@ public class FSystem {
             // read操作（文件已经打开的话可移执行文件的读操作，如果文件没有打开，则可以执行文件的读操作否则不可以）
             else if (cmd[0].trim().equals("read")) {
 
-                Object o = this.getFileByName(cmd[1]);
+                Object o = getFileByName(cmd[1]);
                 if (null != o) {
                     if (o instanceof MyDirectory) {
                         MyDirectory o1 = (MyDirectory) o;
@@ -428,7 +409,7 @@ public class FSystem {
                 }
             } else if (cmd[0].trim().equals("write")) {
 
-                Object o = this.getFileByName(cmd[1]);
+                Object o = getFileByName(cmd[1]);
                 if (null != o) {
                     if (o instanceof MyDirectory) {
                         MyDirectory o1 = (MyDirectory) o;
@@ -486,10 +467,10 @@ public class FSystem {
                 }
             }
             // 退出操作---保存数据
-            else if (cmd[0].trim().equals("exit")) {
-
-                System.exit(0);
-            }
+//            else if (cmd[0].trim().equals("exit")) {
+//
+//                System.exit(0);
+//            }
             // help操作
             else if (cmd[0].trim().equals("help")) {
                 Command command = new Command();
@@ -537,23 +518,7 @@ public class FSystem {
 
 
 
-    private Object getFileByName(String name) {
-        for (Object o : blocks) {
-            if (o instanceof MyDirectory) {
-                MyDirectory o1 = (MyDirectory) o;
-                if (o1.getName().equals(name)) {
-                    return o1;
-                }
-            } else if (o instanceof MyFile) {
-                MyFile o1 = (MyFile) o;
-                if (o1.getName().equals(name)) {
-                    return o1;
-                }
-            }
-        }
-        return null;
 
-    }
 
     /**
      * isInNames(String name) 判断用户名是否存在
