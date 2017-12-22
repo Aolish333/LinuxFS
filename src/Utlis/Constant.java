@@ -14,5 +14,4 @@ public class Constant {
     final long BlockSize = 1024;
     //每个文件包含的最大的磁盘块数目
     final long BlockPerNode = 1024;
-
 }

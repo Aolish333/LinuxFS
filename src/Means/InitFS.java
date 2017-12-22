@@ -6,9 +6,11 @@ package Means;
  * User:Lee
  */
 
+import Ext2.SuperBlock;
+
 /**
  * 初始化文件系统
  */
 public class InitFS {
-
+    SuperBlock superBlock = new SuperBlock();
 }
