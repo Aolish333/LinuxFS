@@ -1,5 +1,4 @@
-import java.net.InetAddress;
-import java.net.UnknownHostException;
+import OS.FSystem;
 
 /**
  * @author aolish333@gmail.com
@@ -8,21 +7,9 @@ import java.net.UnknownHostException;
  */
 public class Main {
     public static void main(String[] args) {
-        String IP = null;
-        String host = null;
-        try
-        {
-            InetAddress ia = InetAddress.getLocalHost();
-            //获取计算机主机名
-            host = ia.getHostName();
-            //获取计算机IP
-            IP= ia.getHostAddress();
-        }
-        catch(UnknownHostException e)
-        {
-            e.printStackTrace();
-        }
-        System.out.println(host);
-        System.out.println(IP);
+        FSystem sts = new FSystem();
+        sts.init();// 初始化数据；
+        sts.login();
+//          sts.meun();
     }
 }
