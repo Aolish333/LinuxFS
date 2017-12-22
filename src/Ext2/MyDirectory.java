@@ -5,7 +5,7 @@ import java.util.TreeMap;
 /**
  * MyDirectory 目录存储结构
  *
- * @author liaijun
+ * @author yangbingyu
  *
  */
 public class MyDirectory {

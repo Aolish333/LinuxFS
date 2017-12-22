@@ -4,7 +4,7 @@ package Ext2;
  * MyFile  文件存储结构
  * String name 文件名字
  * substance 数据内容
- * @author liaijun
+ * @author yangbingyu
  *
  */
 public class MyFile {

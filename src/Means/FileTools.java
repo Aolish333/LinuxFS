@@ -4,9 +4,9 @@ import java.io.*;
 
 /**
  * FileTools 文件操作的工具类
- *
- * @author liaijun
- *
+ * @author aolish333@gmail.com
+ * @date 2017/12/22 19:59
+ * User:Lee
  */
 public class FileTools {
     /**

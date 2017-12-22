@@ -5,6 +5,11 @@ import org.junit.Test;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+/**
+ * @author aolish333@gmail.com
+ * @date 2017/12/20 21:33
+ * User:Lee
+ */
 
 /**
  * String user; 用户 int length; 文件的长度 int right; 文件的读写权限//0只读/1只写 String

@@ -17,7 +17,7 @@ public class Command {
       return  Arrays.toString(command);
    }
 
-    String []command={"fmt","quit","mkdir","rmdir","cd","mk","rm","create","write","read","delete","open"};
+    String []command={"quit","mkdir","rmdir","cd","mk","rm","create","write","read","delete","open"};
 
    public void say(){
       for (String help :command){
