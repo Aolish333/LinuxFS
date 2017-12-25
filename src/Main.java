@@ -10,6 +10,6 @@ public class Main {
         FSystem sts = new FSystem();
         sts.init();// 初始化数据；
         sts.login();
-//          sts.meun();
+         sts.meun();
     }
 }
