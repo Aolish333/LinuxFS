@@ -9,7 +9,10 @@ import java.util.TreeMap;
  *
  */
 public class MyDirectory {
-    private int inode_address = -1;// 记录文件对应Inode的索引
+    // 记录文件对应Inode的索引
+
+    private int inode_address = -1;
+
     private String name = "";
 
     private TreeMap<Integer, Integer> tree = new TreeMap<Integer, Integer>();

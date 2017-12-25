@@ -17,7 +17,6 @@ import java.util.Date;
  * <p>
  * String path 路径；
  *
- *
  */
 public class Inode implements Serializable, Comparable <Inode> {
 
@@ -82,10 +81,11 @@ public class Inode implements Serializable, Comparable <Inode> {
     }
 
     public String getRight() {
-        if (this.right == 0)
+        if (this.right == 0) {
             return "R";
-        else
+        } else {
             return "W";
+        }
     }
 
     public void setRight(int right) {
@@ -115,6 +115,7 @@ public class Inode implements Serializable, Comparable <Inode> {
         this.modifytime = adf.format(date);
     }
 
+    @Override
     public String toString() {
         return this.getUsers() + "\t" + this.getLength() + "b\t"
                 + this.getRight() + "\t" + this.getModifytime();

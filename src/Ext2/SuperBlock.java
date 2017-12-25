@@ -98,8 +98,9 @@ public class SuperBlock implements Serializable{
      */
     public void setInode_busy(int inode_busy) {
         if (inode_busy > -1&&inode_busy<100) {
-            if (this.inode_free.contains(inode_busy))
+            if (this.inode_free.contains(inode_busy)) {
                 this.inode_free.remove(inode_busy);
+            }
             this.inode_busy.add(inode_busy);
         } else {
             System.out.println("inode_busy 操作出错！");
