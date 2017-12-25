@@ -3,9 +3,7 @@ package Means;
 import Ext2.Inode;
 import Ext2.MyDirectory;
 import Ext2.MyFile;
-import jdk.nashorn.internal.objects.NativeArray;
 
-import java.io.File;
 import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
@@ -17,12 +15,11 @@ import static Utlis.CommonWay.getFreeInode;
 /**
  * @author yangbingyu
  * @date 2017/12/22 16:59
- * User:Lee
  */
 public class FileInfo {
     static Scanner sc = new Scanner(System.in);
 
-    public static void FilesUerInfo(){
+    public static void FilesUerInfo() {
         int m = 0;
         System.out.println("文件名\t用户名\t地址\t文件长度\t只读1/可写2\t打开控制");
         if (now_file instanceof MyDirectory) {
@@ -32,9 +29,9 @@ public class FileInfo {
                 System.out.println("没有目录项");
             } else {
 
-                Set<Integer> dir_inodes = now__real_file.getTree()
+                Set <Integer> dir_inodes = now__real_file.getTree()
                         .keySet();
-                Iterator<Integer> iteratore = dir_inodes.iterator();
+                Iterator <Integer> iteratore = dir_inodes.iterator();
                 while (iteratore.hasNext()) {
 
                     Object file = blocks[now__real_file.getTree().get(
@@ -78,7 +75,7 @@ public class FileInfo {
     /**
      * 创建文件
      */
-    public static void create(String[] cmd){
+    public static void create(String[] cmd) {
         int index = getFreeInode();
         if (index != -1) {
             MyFile my_file = new MyFile();
@@ -89,14 +86,16 @@ public class FileInfo {
             inode.setMe(index);
             inode.setModifytime();
             if (inode.getFather() == -1) {
-                inode.setPath(name + "->");
+                inode.setPath(name + "/");
             } else {
                 inode.setPath(inodes[inode.getFather()].getPath()
-                        + cmd[1] + "->");
+                        + cmd[1] + "/");
             }
-            inode.setRight(1);// 可写
+            // 可写
+            inode.setRight(1);
             inode.setState("open");
-            inode.setType(1);// 文件
+            // 文件
+            inode.setType(1);
             inode.setAddress(index);
             inodes[index] = inode;
             my_file.setInode_address(index);
@@ -172,9 +171,9 @@ public class FileInfo {
     }
 
     /**
-     *  读文件
+     * 读文件
      */
-    public static void readFile(String[] cmd){
+    public static void readFile(String[] cmd) {
         Object o = getFileByName(cmd[1]);
         if (null != o) {
             if (o instanceof MyDirectory) {
@@ -191,9 +190,9 @@ public class FileInfo {
     }
 
     /**
-     *  写文件
+     * 写文件
      */
-    public static void writeFile(String[] cmd){
+    public static void writeFile(String[] cmd) {
         Object o = getFileByName(cmd[1]);
         if (null != o) {
             if (o instanceof MyDirectory) {
@@ -209,12 +208,13 @@ public class FileInfo {
                     if ("1".equals(select)) {
                         System.out.println("请输入续写的数据，以#end结束");
                         StringBuffer content = new StringBuffer(o1
-                                .getSubstance().substring(0,o1.getSubstance().lastIndexOf("\r\n")));
+                                .getSubstance().substring(0, o1.getSubstance().lastIndexOf("\r\n")));
                         while (true) {
                             String tem = sc.next();
                             if (tem.equals("#end")) {
                                 System.out.println("文件输入结束");
-                                break;// 文件输入结束
+                                // 文件输入结束
+                                break;
                             }
                             content.append(tem + "\r\n");
                         }
@@ -250,61 +250,116 @@ public class FileInfo {
         }
     }
 
-//    /**
-//     *  打开文件
-//     */
-//    public static void openFile(String[] cmd) {
-//        int index = getFreeInode();
-//        if(index!=-1) {
-//            Inode inode = new Inode();
-//            MyFile my_file = new MyFile();
-//            inode.setRight(1);
-//            inode.setState("open");
-//            inode.setType(1);// 文件
-//            inode.setAddress(index);
-//            inodes[index] = inode;
-//            my_file.setInode_address(index);
-//            MyDirectory real_file = (MyDirectory) now_file;
-//            blocks[index] = my_file;
-//            real_file.getTree().put(index, index);
-//            System.out.println(cmd[1] + "文件已经打开!");
-//
-//                Object o = getFileByName(cmd[1]);
-//                if (null != o) {
-//                    if (o instanceof MyDirectory) {
-//                        MyDirectory o1 = (MyDirectory) o;
-//                        System.out.println(o1.getName() + "目录不能执行此命令！");
-//                    } else if (o instanceof MyFile) {
-//
-//                        MyFile o1 = (MyFile) o;
-//                        System.out.println(o1.getName() + "文件内容如下：");
-//                        System.out.println(o1.getSubstance().substring(0,
-//                                o1.getSubstance().lastIndexOf("\r\n")));
-//                    }
-//                }
-//            }
-//    }
-//
-//    /**
-//     *  关闭文件
-//     */
-//    public static void closeFile(String[] cmd){
-//        int index = getFreeInode();
-//        MyFile my_file = new MyFile();
-//        StringBuffer content = new StringBuffer();
-//        my_file.setSubstance(content.toString());
-//        inodes[index].setLength(content.length());
-//        inodes[index].setState("close");
-//        System.out.println(cmd[1] + "文件已关闭！");
-//    }
+    /**
+     * 打开文件
+     */
+    public static void openFile(String[] cmd) {
+        int index = getFreeInode();
+        if (index != -1) {
+            Inode inode = new Inode();
+            MyFile my_file = new MyFile();
+            inode.setRight(1);
+            inode.setState("open");
+            // 文件
+            inode.setType(1);
+            inode.setAddress(index);
+            inodes[index] = inode;
+            my_file.setInode_address(index);
+            MyDirectory real_file = (MyDirectory) now_file;
+            blocks[index] = my_file;
+            real_file.getTree().put(index, index);
+            System.out.println(cmd[1] + "文件已经打开!");
+
+            Object o = getFileByName(cmd[1]);
+            if (null != o) {
+                if (o instanceof MyDirectory) {
+                    MyDirectory o1 = (MyDirectory) o;
+                    System.out.println(o1.getName() + "目录不能执行此命令！");
+                } else if (o instanceof MyFile) {
+
+                    MyFile o1 = (MyFile) o;
+                    System.out.println(o1.getName() + "文件内容如下：");
+                    System.out.println(o1.getSubstance().substring(0,
+                            o1.getSubstance().lastIndexOf("\r\n")));
+                }
+            }
+        }
+    }
+
+    /**
+     * 关闭文件
+     */
+    public static void closeFile(String[] cmd) {
+        int index = getFreeInode();
+        MyFile my_file = new MyFile();
+        StringBuffer content = new StringBuffer();
+        my_file.setSubstance(content.toString());
+        inodes[index].setLength(content.length());
+        inodes[index].setState("close");
+        System.out.println(cmd[1] + "文件已关闭！");
+    }
 
     /**
      * 复制文件
+     *
+     * 思路：
+     * 先判断命令是否否和规范
+     * 判断要复制的文件是否是文件以及是否合法
+     * 判断复制读路径是否合法。
+     * 在对应的目录下创建新的文件并复制过去。
      */
-    public static void copyFile(String[] cmd){
-//        Object o=getFileByName(cmd[1]);
-//        MyFile ol=(MyFile)o;
-//        MyFile myfile=new MyFile();
-//        String b=(String) FileInfo.readFile(cmd);
+    public static void copyFile(String[] cmd) {
+        if (cmd.length < 3){
+            System.out.println("您输入的命令有误！");
+        }
+        int index = getFreeInode();
+        // 判断是否有可以分配的 节点
+        if (index != -1) {
+
+            Object o = getFileByName(cmd[1]);
+            MyFile ol = (MyFile) o;
+            MyFile my_file = new MyFile();
+            // 设置复制的文件名字
+            my_file.setName(cmd[2]);
+
+
+            Inode inode = new Inode();
+            inode.setFather(now_inode.getMe());
+            inode.setUsers(name);
+            inode.setMe(index);
+            inode.setModifytime();
+            if (inode.getFather() == -1) {
+                inode.setPath(name + "/");
+            } else {
+                inode.setPath(inodes[inode.getFather()].getPath()
+                        + cmd[2] + "/");
+            }
+            // 可写
+            inode.setRight(1);
+            inode.setState("open");
+            // 文件
+            inode.setType(1);
+            inode.setAddress(index);
+            inodes[index] = inode;
+            my_file.setInode_address(index);
+            MyDirectory real_file = (MyDirectory) now_file;
+            blocks[index] = my_file;
+            real_file.getTree().put(index, index);
+
+            StringBuffer content = new StringBuffer();
+
+
+            // 复制内容
+            my_file.setSubstance(ol.getSubstance());
+
+            inodes[index].setLength(ol.getSubstance().length());
+            inodes[index].setState("close");
+            System.out.println("Copy Ok.");
+            sb.setAlreadyuse(content.length());
+            sb.setInode_busy(index);
+        } else {
+            System.out.println("inode申请失败！");
+        }
+
     }
 }

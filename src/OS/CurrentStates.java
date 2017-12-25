@@ -9,18 +9,28 @@ package OS;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
+import static OS.FSystem.now_inode;
+
 /**
  * 显示当前目录状态
  */
 public class CurrentStates {
 
     /**
-     *
+     * 用户包裹前缀
      */
-    public static void show(){
+    public static void showBefore(String name){
 
         String host = CurrentStates.UserShow();
-        System.out.print("["+host+"@root ~]# ");
+        System.out.print("["+host+"@"+name);
+    }
+
+    /**
+     * 用户包裹后缀
+     */
+
+    public static void showAfter(){
+        System.out.print(now_inode.getPath()+ " ~]# ");
     }
 
     /**

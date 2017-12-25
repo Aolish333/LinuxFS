@@ -26,7 +26,7 @@ public class CreateDir {
             inode.setUsers(name);
             inode.setMe(index);
             inode.setModifytime();
-            inode.setPath(now_inode.getPath() + cmd[1] + "->");
+            inode.setPath(now_inode.getPath() + cmd[1] + "/");
             // 可写
             inode.setRight(1);
             // 文件

@@ -8,9 +8,11 @@ package Ext2;
  *
  */
 public class MyFile {
-    private int inode_address=-1;//记录文件对应Inode的索引
-    private String name="";//文件名字
-    private String substance="";//数据内容
+
+
+    private int inode_address=-1;
+    private String name="";
+    private String substance="";
 
     public int getInode_address() {
         return inode_address;

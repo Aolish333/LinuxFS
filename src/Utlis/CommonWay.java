@@ -1,12 +1,10 @@
 package Utlis;
 
-import Ext2.Inode;
 import Ext2.MyDirectory;
 import Ext2.MyFile;
 
-import java.io.File;
-
-import static OS.FSystem.*;
+import static OS.FSystem.blocks;
+import static OS.FSystem.sb;
 
 /**
  * @author aolish333@gmail.com
@@ -44,6 +42,5 @@ public class CommonWay {
         }
         return null;
     }
-
 
 }
