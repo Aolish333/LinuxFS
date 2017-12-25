@@ -164,13 +164,16 @@ public class FSystem {
                 case "MRead" :
                     ReadMuti.MultiRead();
                     break;
+                case "cp" :
+                    FileInfo.copyFile(cmd);
+                    break;
                 default:
                     for (String st : cmd) {
                         System.out.println(st);
                     }
                     System.out.println("您所输入的命令有误，请检查！");
+                    System.out.println("或者你可以输入 help 进行帮助");
             }
-//            CurrentStates.show();
         }//while
     }
 
