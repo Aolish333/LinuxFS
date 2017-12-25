@@ -8,6 +8,7 @@ import Ext2.MyDirectory;
 import Ext2.SuperBlock;
 import Means.FileInfo;
 import Means.FileTools;
+import Means.ReadMuti;
 import Utlis.Command;
 
 import java.util.ArrayList;
@@ -159,6 +160,9 @@ public class FSystem {
                     break;
                 case "mv" :
                     RenameDir.rename(cmd);
+                    break;
+                case "MRead" :
+                    ReadMuti.MultiRead();
                     break;
                 default:
                     for (String st : cmd) {
