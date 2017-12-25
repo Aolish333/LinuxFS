@@ -3,6 +3,7 @@ package Means;
 import Ext2.Inode;
 import Ext2.MyDirectory;
 import Ext2.MyFile;
+import jdk.nashorn.internal.objects.NativeArray;
 
 import java.io.File;
 import java.util.Iterator;
@@ -14,7 +15,7 @@ import static Utlis.CommonWay.getFileByName;
 import static Utlis.CommonWay.getFreeInode;
 
 /**
- * @author aolish333@gmail.com
+ * @author yangbingyu
  * @date 2017/12/22 16:59
  * User:Lee
  */
@@ -208,10 +209,7 @@ public class FileInfo {
                     if ("1".equals(select)) {
                         System.out.println("请输入续写的数据，以#end结束");
                         StringBuffer content = new StringBuffer(o1
-                                .getSubstance().substring(
-                                        0,
-                                        o1.getSubstance().lastIndexOf(
-                                                "\r\n")));
+                                .getSubstance().substring(0,o1.getSubstance().lastIndexOf("\r\n")));
                         while (true) {
                             String tem = sc.next();
                             if (tem.equals("#end")) {
@@ -239,6 +237,7 @@ public class FileInfo {
                         System.out.println("重写操作成功！");
                         break;
 
+
                     } else {
                         System.out.println("输入错误，请重新输入！");
                         select = sc.next();
@@ -251,5 +250,61 @@ public class FileInfo {
         }
     }
 
+//    /**
+//     *  打开文件
+//     */
+//    public static void openFile(String[] cmd) {
+//        int index = getFreeInode();
+//        if(index!=-1) {
+//            Inode inode = new Inode();
+//            MyFile my_file = new MyFile();
+//            inode.setRight(1);
+//            inode.setState("open");
+//            inode.setType(1);// 文件
+//            inode.setAddress(index);
+//            inodes[index] = inode;
+//            my_file.setInode_address(index);
+//            MyDirectory real_file = (MyDirectory) now_file;
+//            blocks[index] = my_file;
+//            real_file.getTree().put(index, index);
+//            System.out.println(cmd[1] + "文件已经打开!");
+//
+//                Object o = getFileByName(cmd[1]);
+//                if (null != o) {
+//                    if (o instanceof MyDirectory) {
+//                        MyDirectory o1 = (MyDirectory) o;
+//                        System.out.println(o1.getName() + "目录不能执行此命令！");
+//                    } else if (o instanceof MyFile) {
+//
+//                        MyFile o1 = (MyFile) o;
+//                        System.out.println(o1.getName() + "文件内容如下：");
+//                        System.out.println(o1.getSubstance().substring(0,
+//                                o1.getSubstance().lastIndexOf("\r\n")));
+//                    }
+//                }
+//            }
+//    }
+//
+//    /**
+//     *  关闭文件
+//     */
+//    public static void closeFile(String[] cmd){
+//        int index = getFreeInode();
+//        MyFile my_file = new MyFile();
+//        StringBuffer content = new StringBuffer();
+//        my_file.setSubstance(content.toString());
+//        inodes[index].setLength(content.length());
+//        inodes[index].setState("close");
+//        System.out.println(cmd[1] + "文件已关闭！");
+//    }
 
+    /**
+     * 复制文件
+     */
+    public static void copyFile(String[] cmd){
+//        Object o=getFileByName(cmd[1]);
+//        MyFile ol=(MyFile)o;
+//        MyFile myfile=new MyFile();
+//        String b=(String) FileInfo.readFile(cmd);
+    }
 }

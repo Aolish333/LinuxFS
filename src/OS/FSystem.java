@@ -155,8 +155,11 @@ public class FSystem {
                 case "write":
                     FileInfo.writeFile(cmd);
                     break;
-//                case "rename":
-//                    FileInfo.renameFile(path,);
+//                case "open":
+//                    FileInfo.openFile(cmd);
+//                    break;
+//                case "close":
+//                    FileInfo.closeFile(cmd);
 //                    break;
                 case "exit" :
                     System.exit(0);
