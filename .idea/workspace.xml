@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e9031152-ea0d-4119-91e6-6245f777ca16" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Means/FileInfo.java" afterPath="$PROJECT_DIR$/src/Means/FileInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Means/ReadMuti.java" afterPath="$PROJECT_DIR$/src/Means/ReadMuti.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OS/FSystem.java" afterPath="$PROJECT_DIR$/src/OS/FSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utlis/Command.java" afterPath="$PROJECT_DIR$/src/Utlis/Command.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +18,8 @@
       <file leaf-file-name="FileInfo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Means/FileInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6935">
-              <caret line="365" column="36" lean-forward="true" selection-start-line="365" selection-start-column="36" selection-end-line="365" selection-end-column="36" />
+            <state relative-caret-position="304">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,6 +120,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -770,7 +767,7 @@
       <workItem from="1513996528161" duration="5459000" />
       <workItem from="1514016669134" duration="6807000" />
       <workItem from="1514168276625" duration="127000" />
-      <workItem from="1514269334369" duration="9142000" />
+      <workItem from="1514269334369" duration="10014000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交。">
       <created>1513837510953</created>
@@ -800,11 +797,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513949679241</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="基本完成。">
+      <created>1514278944279</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1514278944279</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44228000" />
+    <option name="totallyTimeSpent" value="45100000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -816,7 +820,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -828,7 +832,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2681661" sideWeight="0.52352047" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6072664" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -892,13 +896,40 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次提交。" />
     <MESSAGE value="文件打开，关闭，复制未写。" />
-    <option name="LAST_COMMIT_MESSAGE" value="文件打开，关闭，复制未写。" />
+    <MESSAGE value="基本完成。" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本完成。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1245,8 +1276,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Means/FileInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6935">
-          <caret line="365" column="36" lean-forward="true" selection-start-line="365" selection-start-column="36" selection-end-line="365" selection-end-column="36" />
+        <state relative-caret-position="304">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
