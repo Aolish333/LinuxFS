@@ -9,6 +9,7 @@ package DS;
 import Ext2.Inode;
 import Ext2.MyDirectory;
 
+import static Means.FileInfo.judge;
 import static OS.FSystem.*;
 import static Utlis.CommonWay.getFreeInode;
 
@@ -17,6 +18,10 @@ import static Utlis.CommonWay.getFreeInode;
  */
 public class CreateDir {
     public static void mkdir(String[] cmd){
+        // 首先判断有没有重名
+        judge(cmd);
+
+
         int index = getFreeInode();
         if (index != -1) {
             MyDirectory my_file = new MyDirectory();

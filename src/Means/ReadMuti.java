@@ -29,7 +29,7 @@ public class ReadMuti {
             MyDirectory now__real_file = (MyDirectory) now_file;
             m = now__real_file.getTree().size();
             if (m == 0) {
-                System.out.println("次目录下没有可读的文件");
+                System.out.println("此目录下没有可读的文件");
             } else {
 
                 Set <Integer> dir_inodes = now__real_file.getTree()

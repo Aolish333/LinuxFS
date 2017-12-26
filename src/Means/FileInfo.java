@@ -73,9 +73,45 @@ public class FileInfo {
     }
 
     /**
+     *  判断有无相同的文件
+     */
+    public static void judge(String[] cmd){
+        if (now_file instanceof MyDirectory) {
+            MyDirectory now__real_file = (MyDirectory) now_file;
+
+            Set <Integer> dir_inodes = now__real_file.getTree()
+                    .keySet();
+            Iterator <Integer> iteratore = dir_inodes.iterator();
+            while (iteratore.hasNext()) {
+
+                Object file = blocks[now__real_file.getTree().get(
+                        iteratore.next())];
+                if (file instanceof MyDirectory) {
+                    // 判断 在次目录下有没有重名的！
+                    if (((MyDirectory) file).getName().equals(cmd[1])){
+                        System.out.println("改目录下已经有相同的文件名");
+                        return;
+                    }
+                } else {
+                    if (((MyFile) file).getName().equals(cmd[1])) {
+                        System.out.println("改目录下已经有相同的文件名");
+                        return;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    /**
      * 创建文件
      */
     public static void create(String[] cmd) {
+        // 首先判断目录与文件是否重名
+        // 要创建的名录或文件名称
+        judge(cmd);
+
         int index = getFreeInode();
         if (index != -1) {
             MyFile my_file = new MyFile();
@@ -312,7 +348,7 @@ public class FileInfo {
         if (cmd.length < 3){
             System.out.println("您输入的命令有误！");
         }
-        int index = getFreeInode();
+        int index = getFreeInode(   );
         // 判断是否有可以分配的 节点
         if (index != -1) {
 
