@@ -6,10 +6,8 @@ import DS.RenameDir;
 import Ext2.Inode;
 import Ext2.MyDirectory;
 import Ext2.SuperBlock;
-import Means.FileInfo;
 import Means.FileTools;
 import Means.ReadMuti;
-import Utlis.Command;
 
 import java.util.ArrayList;
 import java.util.Scanner;
