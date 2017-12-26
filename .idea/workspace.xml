@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9031152-ea0d-4119-91e6-6245f777ca16" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Means/FileInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utlis/Command.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OS/FSystem.java" afterPath="$PROJECT_DIR$/src/OS/FSystem.java" />
     </list>
@@ -18,7 +16,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SuperBlock.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SuperBlock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ext2/SuperBlock.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="107">
@@ -77,8 +75,28 @@
       <file leaf-file-name="FSystem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OS/FSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2888">
-              <caret line="164" column="27" lean-forward="true" selection-start-line="164" selection-start-column="27" selection-end-line="164" selection-end-column="27" />
+            <state relative-caret-position="152">
+              <caret line="145" column="25" lean-forward="false" selection-start-line="145" selection-start-column="25" selection-end-line="145" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Means/FileInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Command.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Utlis/Command.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -134,8 +152,8 @@
         <option value="$PROJECT_DIR$/src/Means/ReadMuti.java" />
         <option value="$PROJECT_DIR$/src/Ext2/MyFile.java" />
         <option value="$PROJECT_DIR$/src/Means/FileInfo.java" />
-        <option value="$PROJECT_DIR$/src/OS/FSystem.java" />
         <option value="$PROJECT_DIR$/src/Utlis/Command.java" />
+        <option value="$PROJECT_DIR$/src/OS/FSystem.java" />
       </list>
     </option>
   </component>
@@ -746,7 +764,7 @@
       <workItem from="1513996528161" duration="5459000" />
       <workItem from="1514016669134" duration="6807000" />
       <workItem from="1514168276625" duration="127000" />
-      <workItem from="1514269334369" duration="10252000" />
+      <workItem from="1514269334369" duration="10959000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交。">
       <created>1513837510953</created>
@@ -790,11 +808,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514280873107</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="删除后提交。">
+      <created>1514281111869</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1514281111869</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45338000" />
+    <option name="totallyTimeSpent" value="46045000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -916,7 +941,8 @@
     <MESSAGE value="文件打开，关闭，复制未写。" />
     <MESSAGE value="基本完成。" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="删除后提交。" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除后提交。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -955,7 +981,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,7 +1045,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1221,34 +1251,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utlis/Command.java">
+    <entry file="file://$PROJECT_DIR$/src/Ext2/SuperBlock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="107">
+          <caret line="21" column="69" lean-forward="true" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OS/FSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2888">
-          <caret line="164" column="27" lean-forward="true" selection-start-line="164" selection-start-column="27" selection-end-line="164" selection-end-column="27" />
+        <state relative-caret-position="152">
+          <caret line="145" column="25" lean-forward="false" selection-start-line="145" selection-start-column="25" selection-end-line="145" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Means/FileInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="114">
           <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ext2/SuperBlock.java">
+    <entry file="file://$PROJECT_DIR$/src/Utlis/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="21" column="69" lean-forward="true" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+        <state relative-caret-position="551">
+          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
           <folding />
         </state>
       </provider>
