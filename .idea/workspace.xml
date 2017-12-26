@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9031152-ea0d-4119-91e6-6245f777ca16" name="Default" comment="完成文件的复制！">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DS/DeleteDir.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DS/CopyDir.java" afterPath="$PROJECT_DIR$/src/DS/CopyDir.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DS/CreateDir.java" afterPath="$PROJECT_DIR$/src/DS/CreateDir.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Means/FileInfo.java" afterPath="$PROJECT_DIR$/src/Means/FileInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Means/ReadMuti.java" afterPath="$PROJECT_DIR$/src/Means/ReadMuti.java" />
+    <list default="true" id="ac6035aa-96d4-4771-8a37-13ef9a680190" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,98 +14,49 @@
     <SUITE FILE_PATH="coverage/LinuxFS$Main.coverage" NAME="Main Coverage Results" MODIFIED="1513939861936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>blk</find>
-      <find>cd</find>
-      <find>mkdir</find>
-      <find>open</find>
-      <find>create</find>
-      <find>-&gt;</find>
-      <find>请先登陆</find>
-      <find>(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/|[ \t]*//.*)</find>
-      <find>closeFile</find>
-      <find>read</find>
-      <find>copy</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>/</replace>
-    </replaceStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/Ext2/Directory.java" />
-        <option value="$PROJECT_DIR$/src/means/InitFS.java" />
-        <option value="$PROJECT_DIR$/src/means/initfs.java" />
-        <option value="$PROJECT_DIR$/src/means/initFs.java" />
-        <option value="$PROJECT_DIR$/src/means/initFS.java" />
-        <option value="$PROJECT_DIR$/src/Ext2/Block.java" />
-        <option value="$PROJECT_DIR$/src/utlis/Command.java" />
-        <option value="$PROJECT_DIR$/src/utlis/Constant.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Means/initFS.java" />
-        <option value="$PROJECT_DIR$/src/Means/InitFS.java" />
-        <option value="$PROJECT_DIR$/src/Means/EnterDir.java" />
-        <option value="$PROJECT_DIR$/src/Ext2/INode.java" />
-        <option value="$PROJECT_DIR$/src/DS/EnterDir.java" />
-        <option value="$PROJECT_DIR$/src/Utlis/CommonWay.java" />
-        <option value="$PROJECT_DIR$/src/DS/RenameDir.java" />
-        <option value="$PROJECT_DIR$/src/OS/CurrentStates.java" />
-        <option value="$PROJECT_DIR$/src/Ext2/MyDirectory.java" />
-        <option value="$PROJECT_DIR$/src/Ext2/MyFile.java" />
-        <option value="$PROJECT_DIR$/src/Ext2/Inode.java" />
-        <option value="$PROJECT_DIR$/src/Ext2/SuperBlock.java" />
-        <option value="$PROJECT_DIR$/src/Utlis/RandomAccessFileTest.java" />
-        <option value="$PROJECT_DIR$/src/Means/FileTools.java" />
-        <option value="$PROJECT_DIR$/src/Means/ConcatReader.java" />
-        <option value="$PROJECT_DIR$/src/Means/ReadMy.java" />
-        <option value="$PROJECT_DIR$/src/Utlis/Command.java" />
-        <option value="$PROJECT_DIR$/src/OS/FSystem.java" />
-        <option value="$PROJECT_DIR$/src/DS/DeleteDir.java" />
-        <option value="$PROJECT_DIR$/src/DS/CopyDir.java" />
-        <option value="$PROJECT_DIR$/src/Means/ReadMuti.java" />
-        <option value="$PROJECT_DIR$/src/Means/FileInfo.java" />
-        <option value="$PROJECT_DIR$/src/DS/CreateDir.java" />
-      </list>
-    </option>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="FSystem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OS/FSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2013">
+              <caret line="177" column="5" lean-forward="false" selection-start-line="177" selection-start-column="5" selection-end-line="177" selection-end-column="5" />
+              <folding>
+                <element signature="docComment;class#FSystem#0" expanded="false" />
+                <element signature="docComment;field#sb#0;class#FSystem#0" expanded="false" />
+                <element signature="docComment;method#init#0;class#FSystem#0" expanded="false" />
+                <element signature="method#init#0;class#FSystem#0" expanded="false" />
+                <element signature="docComment;method#login#0;class#FSystem#0" expanded="false" />
+                <element signature="method#login#0;class#FSystem#0" expanded="false" />
+                <element signature="docComment;method#regeist#0;class#FSystem#0" expanded="false" />
+                <element signature="method#regeist#0;class#FSystem#0" expanded="false" />
+                <element signature="docComment;method#isInNames#0;class#FSystem#0" expanded="false" />
+                <element signature="method#isInNames#0;class#FSystem#0" expanded="false" />
+                <element signature="docComment;method#getInode#0;class#FSystem#0" expanded="false" />
+                <element signature="method#getInode#0;class#FSystem#0" expanded="false" />
+                <element signature="docComment;method#getBlock#0;class#FSystem#0" expanded="false" />
+                <element signature="method#getBlock#0;class#FSystem#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Command.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Utlis/Command.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="471" />
-    <option name="y" value="90" />
-    <option name="width" value="1382" />
-    <option name="height" value="756" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -130,8 +74,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -139,6 +81,11 @@
             <path>
               <item name="LinuxFS" type="b2602c69:ProjectViewProjectNode" />
               <item name="LinuxFS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinuxFS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LinuxFS" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LinuxFS" type="b2602c69:ProjectViewProjectNode" />
@@ -180,19 +127,9 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.splitter.proportion" value="0.17307693" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\LinuxFS\src" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -206,41 +143,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="LinuxFS" />
-      <envs />
-    </configuration>
-    <configuration name="RandomAccessFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Utlis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Utlis.RandomAccessFileTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="LinuxFS" />
-      <envs />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -320,105 +225,15 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.RandomAccessFileTest" />
-    </list>
-    <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.RandomAccessFileTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e9031152-ea0d-4119-91e6-6245f777ca16" name="Default" comment="" />
-      <created>1513776552662</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1513776552662</updated>
-      <workItem from="1513776555857" duration="3640000" />
-      <workItem from="1513836159453" duration="1263000" />
-      <workItem from="1513936229657" duration="4173000" />
-      <workItem from="1513940902230" duration="1253000" />
-      <workItem from="1514193622645" duration="4345000" />
-      <workItem from="1514199582552" duration="442000" />
-      <workItem from="1514268774416" duration="5933000" />
-    </task>
-    <task id="LOCAL-00001" summary="第一次提交。">
-      <created>1513837510953</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1513837510954</updated>
-    </task>
-    <task id="LOCAL-00002" summary="第一次提交。">
-      <created>1513837811090</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1513837811090</updated>
-    </task>
-    <task id="LOCAL-00003" summary="第一次提交。">
-      <created>1513837906253</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1513837906253</updated>
-    </task>
-    <task id="LOCAL-00004" summary="我就不信了。">
-      <created>1513936488112</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1513936488112</updated>
-    </task>
-    <task id="LOCAL-00005" summary="重构 cd 以及 mkdir">
-      <created>1513940557324</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1513940557324</updated>
-    </task>
-    <task id="LOCAL-00006" summary="还剩 对多文件进行读取，复制目录和文件、以及打开文件。">
-      <created>1514192232691</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1514192232691</updated>
-    </task>
-    <task id="LOCAL-00007" summary="同时读取多个文件完成！">
-      <created>1514195890545</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1514195890545</updated>
-    </task>
-    <task id="LOCAL-00008" summary="完成文件的复制！">
-      <created>1514199954941</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1514199954941</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30766000" />
-  </component>
-  <component name="TodoView" selected-index="3">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="5000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -441,10 +256,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32195678" sideWeight="0.4967811" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6166098" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.4967811" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27843347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28218883" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -457,30 +272,11 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="第一次提交。" />
-    <MESSAGE value="我就不信了。" />
-    <MESSAGE value="重构 cd 以及 mkdir" />
-    <MESSAGE value="还剩 对多文件进行读取，复制目录和文件、以及打开文件。" />
-    <MESSAGE value="同时读取多个文件完成！" />
-    <MESSAGE value="完成文件的复制！" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成文件的复制！" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/String.java">
@@ -508,7 +304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -558,14 +353,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DS/DeleteDir.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DS/DeleteDir.java" />
     <entry file="file://$PROJECT_DIR$/src/Means/FileInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
@@ -586,7 +374,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="718">
           <caret line="329" column="32" lean-forward="true" selection-start-line="329" selection-start-column="32" selection-end-line="329" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#FSystem#0" expanded="false" />
+            <element signature="docComment;field#sb#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#init#0;class#FSystem#0" expanded="false" />
+            <element signature="method#init#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#login#0;class#FSystem#0" expanded="false" />
+            <element signature="method#login#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#regeist#0;class#FSystem#0" expanded="false" />
+            <element signature="method#regeist#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#isInNames#0;class#FSystem#0" expanded="false" />
+            <element signature="method#isInNames#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#getInode#0;class#FSystem#0" expanded="false" />
+            <element signature="method#getInode#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#getBlock#0;class#FSystem#0" expanded="false" />
+            <element signature="method#getBlock#0;class#FSystem#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -594,7 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -632,7 +434,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20545">
           <caret line="587" column="50" lean-forward="false" selection-start-line="587" selection-start-column="43" selection-end-line="587" selection-end-column="50" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#FSystem#0" expanded="false" />
+            <element signature="docComment;field#sb#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#init#0;class#FSystem#0" expanded="false" />
+            <element signature="method#init#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#login#0;class#FSystem#0" expanded="false" />
+            <element signature="method#login#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#regeist#0;class#FSystem#0" expanded="false" />
+            <element signature="method#regeist#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#isInNames#0;class#FSystem#0" expanded="false" />
+            <element signature="method#isInNames#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#getInode#0;class#FSystem#0" expanded="false" />
+            <element signature="method#getInode#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#getBlock#0;class#FSystem#0" expanded="false" />
+            <element signature="method#getBlock#0;class#FSystem#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -644,14 +461,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DS/DeleteDir.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DS/DeleteDir.java" />
     <entry file="file://$PROJECT_DIR$/src/Ext2/Block.java" />
     <entry file="file://$PROJECT_DIR$/src/Ext2/Directory.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/System.java">
@@ -683,7 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3395">
           <caret line="97" column="28" lean-forward="false" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,14 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utlis/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ext2/Inode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -769,24 +570,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DS/RenameDir.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DS/DeleteDir.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DS/DeleteDir.java" />
     <entry file="file://$PROJECT_DIR$/src/Ext2/SuperBlock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
@@ -807,15 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="508">
           <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DS/EnterDir.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,56 +602,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/OS/FSystem.java">
+    <entry file="file://$PROJECT_DIR$/src/Means/FileInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="764">
+          <caret line="88" column="35" lean-forward="false" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Means/FileInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/DS/EnterDir.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="112" column="17" lean-forward="false" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
+        <state relative-caret-position="1260">
+          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DS/RenameDir.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DS/CreateDir.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="893">
+          <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/src/OS/FSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2013">
+          <caret line="177" column="5" lean-forward="false" selection-start-line="177" selection-start-column="5" selection-end-line="177" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#FSystem#0" expanded="false" />
+            <element signature="docComment;field#sb#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#init#0;class#FSystem#0" expanded="false" />
+            <element signature="method#init#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#login#0;class#FSystem#0" expanded="false" />
+            <element signature="method#login#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#regeist#0;class#FSystem#0" expanded="false" />
+            <element signature="method#regeist#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#isInNames#0;class#FSystem#0" expanded="false" />
+            <element signature="method#isInNames#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#getInode#0;class#FSystem#0" expanded="false" />
+            <element signature="method#getInode#0;class#FSystem#0" expanded="false" />
+            <element signature="docComment;method#getBlock#0;class#FSystem#0" expanded="false" />
+            <element signature="method#getBlock#0;class#FSystem#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utlis/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
