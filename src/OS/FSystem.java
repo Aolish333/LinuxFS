@@ -128,25 +128,25 @@ public class FSystem {
                     Command command = new Command();
                     command.say();
                     break;
-                case "dir" :
+                case "ls" :
                     FileInfo.FilesUerInfo();
                     break;
-                case "create" :
+                case "echo" :
                     FileInfo.create(cmd);
                     break;
                 case "mkdir" :
                     CreateDir.mkdir(cmd);
                     break;
-                case "delete":
+                case "rm":
                     FileInfo.delete(cmd);
                     break;
                 case "cd" :
                     EnterDir.cd(cmd);
                     break;
-                case "read":
+                case "cat":
                     FileInfo.readFile(cmd);
                     break;
-                case "write":
+                case "vim":
                     FileInfo.writeFile(cmd);
                     break;
                 case "open":

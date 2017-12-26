@@ -58,7 +58,7 @@ public class ReadMuti {
             }
 
         } else {
-            System.out.println("改目录下无可批量读取的文件！");
+            System.out.println("该目录下无可批量读取的文件！");
         }
 
     }

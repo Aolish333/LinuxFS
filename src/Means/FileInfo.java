@@ -22,16 +22,19 @@ public class FileInfo {
     public static void FilesUerInfo() {
         int m = 0;
         System.out.println("文件名\t用户名\t地址\t文件长度\t只读1/可写2\t打开控制");
+        //判断是目录还是文件
         if (now_file instanceof MyDirectory) {
             MyDirectory now__real_file = (MyDirectory) now_file;
+            //目录个数
             m = now__real_file.getTree().size();
             if (m == 0) {
                 System.out.println("没有目录项");
             } else {
-
+                // 目录信息存放在集合中
                 Set <Integer> dir_inodes = now__real_file.getTree()
                         .keySet();
                 Iterator <Integer> iteratore = dir_inodes.iterator();
+                //迭代器迭代
                 while (iteratore.hasNext()) {
 
                     Object file = blocks[now__real_file.getTree().get(
@@ -76,6 +79,7 @@ public class FileInfo {
      * 创建文件
      */
     public static void create(String[] cmd) {
+        //判断是否有空闲节点
         int index = getFreeInode();
         if (index != -1) {
             MyFile my_file = new MyFile();
@@ -103,13 +107,16 @@ public class FileInfo {
             blocks[index] = my_file;
             real_file.getTree().put(index, index);
             System.out.println(cmd[1] + "文件已经打开！请输入内容。。。#end结束输入");
+            //字符串变量
             StringBuffer content = new StringBuffer();
             while (true) {
+                //输入文件
                 String tem = sc.nextLine();
                 if (tem.equals("#end")) {
                     System.out.println("文件输入结束");
                     break;// 文件输入结束
                 }
+                //向字符缓冲区追加元素
                 content.append(tem + "\r\n");
             }
             my_file.setSubstance(content.toString());
